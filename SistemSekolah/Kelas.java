@@ -33,6 +33,7 @@ public class Kelas {
         info += "\tJumlah Siswa : " + daftarSiswa.size() + "\n";
 
         if (!daftarSiswa.isEmpty()) {
+            //menyusun sendiri info siswa nya 
             for (Siswa s : daftarSiswa) {
                 info += "\t\t- " + s.getInfo() + "\n";
             }
