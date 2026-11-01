@@ -11,6 +11,9 @@ public class RumahSakitDemo {
 
         Pegawai desi = new Pegawai("1234", "Ns. Desi");
         Pegawai eka = new Pegawai("4567", "Ns. Eka");
+        
+       eka.setNama("pink");
+       System.out.println();
 
         Pasien pasien1 = new Pasien("343298", "Puspa Widya");
         pasien1.tambahKonsultasi(LocalDate.of(2021, 8, 11), ani, desi);
