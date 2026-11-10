@@ -1,26 +1,31 @@
 package Jobsheet10;
 
-public class Dosen extends Pegawai {
+public class Dosen extends Pegawai{
     public String nidn;
 
-    public Dosen(){
+    public Dosen() {
     }
 
-    public Dosen(String nip, String nama, String nidn){
+    public Dosen(String nip, String nama, String nidn) {
         super(nip, nama);
         this.nidn = nidn;
     }
 
-    public void displayInfo(){
+    public void displayInfo() {
         super.displayInfo();
         System.out.println("NIDN: " + nidn);
     }
 
-    public void mengajar(){
+    public void mengajar() {
         System.out.println("Membuat rencana penbe;ajaran");
         System.out.println("Menyusun materi");
         System.out.println("Melaksanakan PBM");
         System.out.println("Melakukan evaluasi");
+    }
+
+    @Override
+    public int compareTo(Dosen other) {
+        return this.nama.compareTo(other.nama);
     }
 
 }
