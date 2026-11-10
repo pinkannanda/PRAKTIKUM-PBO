@@ -12,10 +12,20 @@ public class ComparableDemo {
         Dosen dosen2 = new Dosen("19850302", "Aida, A.Md.", "198503");
         Dosen dosen3 = new Dosen("19970103", "Budi, S.Kom. M.Kom", "199701");
 
-        Collections.sort(daftarDosen);
-
+        // Memasukkan objek dosen ke ArrayList
         daftarDosen.add(dosen1);
         daftarDosen.add(dosen2);
         daftarDosen.add(dosen3);
+
+        // Mengurutkan daftar dosen
+        Collections.sort(daftarDosen);
+
+        // Menampilkan hasil sorting
+        System.out.println("Daftar Dosen Setelah Diurutkan:");
+
+        for (Dosen dosen : daftarDosen) {
+            dosen.displayInfo();
+            System.out.println();
+        }
     }
 }

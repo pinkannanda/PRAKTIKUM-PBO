@@ -21,12 +21,5 @@ public class NewDemo {
         Printer printer1 = new Printer();
         printer1.cetak(webpage1);
         printer1.cetak(doc1);
-
-        //percobaan nomor 5
-        Printable printable1 = new Printable();
-
-        Printer printer1 = new Printer();
-        Printer1.cetak(webpage1);
-        Printer1.cetak(doc1);
     }
 }

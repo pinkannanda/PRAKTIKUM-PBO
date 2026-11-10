@@ -1,6 +1,6 @@
 package Jobsheet10;
 
-public class Dosen extends Pegawai{
+public class Dosen extends Pegawai implements Comparable<Dosen> {
     public String nidn;
 
     public Dosen() {
@@ -17,7 +17,7 @@ public class Dosen extends Pegawai{
     }
 
     public void mengajar() {
-        System.out.println("Membuat rencana penbe;ajaran");
+        System.out.println("Membuat rencana pembelajaran");
         System.out.println("Menyusun materi");
         System.out.println("Melaksanakan PBM");
         System.out.println("Melakukan evaluasi");
