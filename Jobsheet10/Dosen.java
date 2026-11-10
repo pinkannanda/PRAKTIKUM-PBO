@@ -25,7 +25,7 @@ public class Dosen extends Pegawai implements Comparable<Dosen> {
 
     @Override
     public int compareTo(Dosen other) {
-        return this.nama.compareTo(other.nama);
+        return this.nip.compareTo(other.nip);
     }
 
 }
